@@ -1,0 +1,33 @@
+{
+  "compilerOptions": {
+    "lib": [
+      "ES2017",
+      "DOM"
+    ],
+    "target": "ES2017",
+    "module": "ES2020",
+    "strict": true,
+    "esModuleInterop": true,
+    "forceConsistentCasingInFileNames": true,
+    "outDir": "./dist/esm",
+    "declaration": true,
+    "allowJs": true,
+    "noImplicitAny": false,
+    "sourceMap": true,
+    "removeComments": false,
+    "preserveConstEnums": true,
+    "emitDeclarationOnly": true,
+    "strictNullChecks": false,
+    "moduleResolution": "node"
+  },
+  "include": [
+    "src/"
+  ],
+  "exclude": [
+    "/dist/",
+    "/node_modules/"
+  ],
+  "typeRoots": [
+    "/node_modules/@types/"
+  ]
+}

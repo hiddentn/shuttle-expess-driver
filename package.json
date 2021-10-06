@@ -1,0 +1,41 @@
+{
+  "name": "shuttle-express-driver",
+  "version": "1.0.0",
+  "description": "tiny driver for shuttle express using webHID",
+  "main": "dist/cjs/index.js",
+  "module": "dist/esm/index.js",
+  "typings": "dist/esm/index.d.ts",
+  "types": "dist/esm/index.d.ts",
+  "files": [
+    "dist/"
+  ],
+  "author": "TheHidden1",
+  "scripts": {
+    "build": "yarn clean && yarn lint && yarn build-esm && yarn build-webpack",
+    "start": "webpack-dev-server --open --config webpack.dev.js",
+    "clean": "rimraf dist",
+    "build-esm": "tsc -p tsconfig.json",
+    "build-webpack": "webpack --config webpack.prod.js",
+    "lint": "eslint . --ext .ts"
+  },
+  "devDependencies": {
+    "@types/node": "^15.12.5",
+    "@types/pako": "^1.0.1",
+    "@typescript-eslint/eslint-plugin": "^4.28.2",
+    "@typescript-eslint/parser": "^4.28.2",
+    "eslint": "^7.30.0",
+    "eslint-webpack-plugin": "^2.5.4",
+    "rimraf": "^3.0.2",
+    "terser-webpack-plugin": "^5.1.4",
+    "ts-loader": "^9.2.3",
+    "ts-node": "^10.0.0",
+    "typescript": "^4.3.4",
+    "webpack": "^5.44.0",
+    "webpack-cli": "^4.7.2",
+    "webpack-dev-server": "^3.11.2",
+    "webpack-merge": "^5.8.0"
+  },
+  "dependencies": {
+    "core-utils": "1.0.0"
+  }
+}
